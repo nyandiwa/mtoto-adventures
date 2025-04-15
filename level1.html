@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Level 1 - Know Your World</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', sans-serif;
+      background-color: #e3f2fd;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header, footer {
+      background: #2196f3;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+    main {
+      padding: 2em;
+    }
+    h2 {
+      color: #2e7d32;
+    }
+    .section {
+      margin-bottom: 3em;
+      background: #ffffff;
+      padding: 1em;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, button, select {
+      padding: 0.5em;
+      margin: 0.5em 0;
+      font-size: 1em;
+    }
+    .badge {
+      background: gold;
+      padding: 0.5em 1em;
+      border-radius: 20px;
+      display: inline-block;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Level 1: Know Your World</h1>
+  </header>
+  <main>
+
+    <!-- My Family Circle -->
+    <section class="section" id="family-circle">
+      <h2>👨‍👩‍👧‍👦 My Family Circle</h2>
+      <p>Build your family and learn about staying safe!</p>
+
+      <h3>Family Tree Builder</h3>
+      <form id="family-form">
+        Your Name: <input type="text" id="childName"><br>
+        Mom's Name: <input type="text" id="momName"><br>
+        Dad's Name: <input type="text" id="dadName"><br>
+        Sibling's Name: <input type="text" id="siblingName"><br>
+        Cousin's Name: <input type="text" id="cousinName"><br>
+        <button type="button" onclick="buildTree()">Build My Family Tree</button>
+      </form>
+      <div id="family-output"></div>
+
+      <h3>Stranger Safety Game</h3>
+      <p>A stranger offers you candy after school. What do you do?</p>
+      <button onclick="alert('Correct! Always say NO and tell a trusted adult.')">Say No and Tell Mom</button>
+      <button onclick="alert('Oops! That’s not safe. Always say NO and report.')">Take the Candy</button>
+
+      <h3>Role Play</h3>
+      <p>"Grandma" calls for help, but "Stranger Steve" also asks for help—what do you do?</p>
+      <button onclick="alert('Great choice! Always help trusted family.')">Help Grandma</button>
+      <button onclick="alert('Be careful! Stranger Steve might be tricky.')">Help Stranger Steve</button>
+
+      <div class="badge">🏅 You unlocked: Super Safety Star</div>
+
+      <h3>Parent Tip</h3>
+      <textarea rows="3" cols="40" placeholder="Parents: Add your own safety tip here!"></textarea>
+    </section>
+
+    <!-- Know Your World -->
+    <section class="section" id="sky">
+      <h2>🌞 Discovering the Sky</h2>
+      <ul>
+        <li>Sun – Jua ☀️</li>
+        <li>Moon – Mwezi 🌙</li>
+        <li>Stars – Nyota ✨</li>
+      </ul>
+    </section>
+
+    <section class="section" id="water">
+      <h2>🌊 Exploring Water Wonders</h2>
+      <p>Learn about rivers, lakes, and oceans. Water is life!</p>
+    </section>
+
+    <section class="section" id="mountains">
+      <h2>⛰️ Mountain and Hills Adventure</h2>
+      <p>Explore hills, mountains, and valleys in Kenya.</p>
+    </section>
+
+    <section class="section" id="nature">
+      <h2>🌳 Earth's Nature Treasures</h2>
+      <p>Trees, animals, and habitats are all around you!</p>
+    </section>
+
+    <section class="section" id="eco">
+      <h2>♻️ Eco-Friendly Challenges</h2>
+      <p>Recycle plastic and plant a tree to protect the Earth.</p>
+      <div class="badge">🏅 You unlocked: Nature Explorer</div>
+    </section>
+
+    <a href="index.html">← Back to Home</a>
+  </main>
+
+  <footer>
+    <p>Level 1 of Mtoto Adventures | &copy; 2025</p>
+  </footer>
+
+  <script>
+    function buildTree() {
+      const child = document.getElementById("childName").value;
+      const mom = document.getElementById("momName").value;
+      const dad = document.getElementById("dadName").value;
+      const sibling = document.getElementById("siblingName").value;
+      const cousin = document.getElementById("cousinName").value;
+
+      const output = `
+        <h4>Meet Your Family!</h4>
+        <p>This is ${child}. Here’s Mommy (${mom}), Daddy (${dad}), your sibling ${sibling}, and cousin ${cousin}!</p>
+      `;
+      document.getElementById("family-output").innerHTML = output;
+    }
+  </script>
+</body>
+</html>
