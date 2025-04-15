@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mtoto Adventures - Mzazi Bora</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mzazi Bora - Mtoto Adventures</h1>
+    <p>Learn safety, bond with family, and grow strong together!</p>
+  </header>
+
+  <section id="family-circle">
+    <h2>My Family Circle</h2>
+    <p>Build your family tree!</p>
+    <form id="familyForm">
+      <input type="text" placeholder="Enter a family member's name" required />
+      <button type="submit">Add to Tree</button>
+    </form>
+    <div id="familyTree"></div>
+  </section>
+
+  <section id="safety-lessons">
+    <h2>Interactive Safety Lessons</h2>
+    <p>What would you do if a stranger offers you candy?</p>
+    <button onclick="checkAnswer('no')">Say No!</button>
+    <button onclick="checkAnswer('yes')">Take It</button>
+    <p id="lessonFeedback"></p>
+  </section>
+
+  <section id="roleplay">
+    <h2>Fun Role Play</h2>
+    <p>Grandma calls, but Stranger Steve tries to trick you. What do you do?</p>
+    <button onclick="checkAnswer('ignore')">Ignore Stranger</button>
+    <button onclick="checkAnswer('go')">Go with Stranger</button>
+  </section>
+
+  <section id="call-for-help">
+    <h2>Call for Help Chant</h2>
+    <p>Sing along to learn!</p>
+    <audio controls>
+      <source src="audio/call-for-help.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section id="story-mode">
+    <h2>Story Mode: Lost at the Market</h2>
+    <p>Learn what to do when you’re lost!</p>
+    <ul>
+      <li>Look for a shop with a sign like "bank" or "market"</li>
+      <li>Tell an adult: "Nimepotea, naitwa Amina"</li>
+      <li>Give them your parent's number</li>
+    </ul>
+  </section>
+
+  <section id="memory-game">
+    <h2>Memory Game</h2>
+    <p>What's your parent's phone number?</p>
+    <input type="text" placeholder="Enter number" />
+    <button>Check</button>
+  </section>
+
+  <section id="parent-dashboard">
+    <h2>Parental Dashboard</h2>
+    <p>Track progress and customize safety tips.</p>
+    <textarea placeholder="Add a tip like 'Don't talk to strangers near school.'"></textarea>
+    <button>Save Tip</button>
+  </section>
+
+  <footer>
+    <p>👉 Follow us on <a href="https://x.com/WaregaDillan" target="_blank">X</a> | <strong>Support Us</strong>: PayPal - 64a9cdf06acd4747ac1e9b62@gmail.com | M-PESA Paybill: 400222 Acc: 01100688403001</p>
+    <p>Encouraging Kenyan kids to learn and grow through fun and safe adventures! ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
