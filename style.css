@@ -1,0 +1,41 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fdf4;
+}
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+h2 {
+    color: #2e7d32;
+}
+.profession-card {
+    background: #ffffff;
+    border: 2px solid #a5d6a7;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+li {
+    background: #e8f5e9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+footer {
+    background-color: #c8e6c9;
+    padding: 15px;
+    text-align: center;
+}
